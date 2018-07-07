@@ -19,7 +19,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	if len(url) == 0 {
 		return
 	}
-	page, err := parse("https://" + url)
+	page, err := parse("http://" + url)
 	if err != nil {
 		fmt.Printf("Error getting page %s %s\n", url, err)
 		return
